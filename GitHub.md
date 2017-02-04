@@ -17,8 +17,12 @@ Inside your repository you can add a configuration inside: .git/config
 ----
 
 ## Generate ssh keys for your project
-
+I advise to leave empty the password for now
 ```
 ssh-keygen -t rsa -C "alessandrominoccheri@gmail.com"
-cat ~/.ssh/id_rsa_whatyouwant.pub
+```
+
+To view your public key you can use:
+```
+cat ~/.ssh/id_rsa.pub
 ```
