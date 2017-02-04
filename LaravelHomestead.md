@@ -31,6 +31,16 @@ After this line add this:
 type: symfony
 ```
 
+When you launch your symfony app with vagrant you can have this error:
+```
+You are not allowed to access this file. Check app_dev.php for more information.
+```
+
+To fix It you need to comment this line inside web/app_dev.php
+```
+exit('You are not allowed to access this file. Check '.basename(__FILE__).' for more information.');
+```
+
 ## Hosts
 Last thing you can do is to assign a name to your local app, you need to go into file: etc/hosts and add this line for example (ip and name depends on the parameters inserted into Homestead.yaml of your site)
 ```
