@@ -30,3 +30,9 @@ After this line add this:
 ```
 type: symfony
 ```
+
+## Hosts
+Last thing you can do is to assign a name to your local app, you need to go into file: etc/hosts and add this line for example (ip and name depends on the parameters inserted into Homestead.yaml of your site)
+```
+192.168.10.10    your-site.app
+```
